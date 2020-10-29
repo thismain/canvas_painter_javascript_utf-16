@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta charset="UTF-16">
-<script src="fileSaver.js"></script>
+<!--<script src="fileSaver.js"></script>-->
 </head>
 <body style="background:#000000;overflow:hidden;">
 <canvas id="canvid" width="10" height="10" style="position:absolute;left:0px;top:0px;z-index:1000;background:#000000;"></canvas>
@@ -349,12 +349,12 @@ case 'ArrowRight':
 oneStep=true; if(paused||keyPaused){paused=false;keyPaused=false;ticker();}
 break;
 case 's':
-//var image=el('canvid').toDataURL("image/png").replace("image/png", "image/octet-stream");
-//window.location.href=image;alert('image saved');
+/*//need to use filesaver.js for this, otherwise take a screenshot
 var d=new Date();
 var filename=d.toDateString()+d.toLocaleTimeString();
 el('canvid').toBlob(function(blob){saveAs(blob, filename );});
 alert('file saved');
+*/
 break;
 }}
 
